@@ -6,9 +6,12 @@ setup(
     py_modules=["bash"],
     install_requires=[
         "Click",
+        'odooly'
     ],
     entry_points='''
         [console_scripts]
-        pybash=bash:cli
+        pybash_conectar=bash:conectar_servidor
+        pybash_odoo=bash:odoo
+        pybash_db=bash:duplicar_base
     ''',
 )
